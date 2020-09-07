@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    background-color: #00000057;
+}
+
+.flip-card{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    perspective: 1000px;
+
+}
+
+.cards.flip{
+    transform: rotateY(180deg);
+}
+
+.cards:active{
+    transform: scale(.97);
+    transition: transform .2s;
+}
+
+.cards{
+    width: calc(25% - 10px);
+    height: calc(25% - 10px);
+    position: relative;
+    margin: 5px;
+    transform-style: preserve-3d;
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+.front-face, .back-face{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 1.5px;
+    background-color: #9fe053 ;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.front-face{
+    transform: rotateY(180deg);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.front-face svg {
+    font-size: xxx-large;
+    color: #ffffff;
+}
+
+.cards.Yup{
+    /* visibility: hidden; */
+    opacity: 0;
+}
+
+
