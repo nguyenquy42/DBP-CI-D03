@@ -145,3 +145,7 @@ body, html {
 }
 /* css login end */
 
+.text {
+    margin-top: 25px;
+    text-align: center;
+}

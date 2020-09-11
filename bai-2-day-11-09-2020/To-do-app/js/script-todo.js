@@ -15,7 +15,6 @@ class items {
 
         /// create a checkbox and class name
         let check = document.createElement('checkbox');
-        check.innerHTML = '<input type="checkbox" class="myCheck "></input>'
         check.classList.add('myCheck');
 
         /// create input and another things :)
@@ -28,12 +27,12 @@ class items {
         /// create button to edit
         let editButton = document.createElement('button');
         editButton.innerHTML = "Edit";
-        editButton.classList.add('editButton');
+        editButton.classList.add('btn-dark');
 
         /// create button to remove
         let removeButton = document.createElement('button');
         removeButton.innerHTML = "Remove"
-        removeButton.classList.add('removeButton')
+        removeButton.classList.add('btn-danger')
 
         /// thêm một thẻ div vào thẻ list
         list.appendChild(box);
