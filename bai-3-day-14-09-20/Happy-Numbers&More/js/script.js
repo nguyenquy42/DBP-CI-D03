@@ -121,7 +121,7 @@ document.getElementById('btn').addEventListener('click',()=>{
     { 
         sum = sum + n; 
         if (sum == num) {
-            result.innerHTML += num +"là triangular number ";
+            result.innerHTML += num +" là triangular number ";
             return true; 
         }
     } 
