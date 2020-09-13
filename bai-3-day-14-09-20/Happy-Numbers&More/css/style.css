@@ -1,0 +1,14 @@
+.body {
+    text-align: center;
+}
+.body .inp {
+    width: 577px;
+    float: left;
+}
+ .body .btn {
+     float: right;
+ }
+
+ #result {
+     clear: both;
+ }
