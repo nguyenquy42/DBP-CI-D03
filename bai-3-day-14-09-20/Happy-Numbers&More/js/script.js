@@ -1,41 +1,4 @@
 
-// function happyNumbers() {
-//     var result = document.getElementById("happy-result")
-//     var inputy = document.getElementById("happyValue").value
-//     result.innerHTML=""
-//     for (i = 1; i < inputy; i++) {
-
-//        (happy(i, i)) 
-         
-//     }
-
-// }
-
-// function happy(value,value2) {
-//     var result = document.getElementById("happy-result")
-//     var lengthNum = value.toString().length;
-//     var resultNumbers = 0
-
-//     // for (var b = 0 ; b < lengthNum; b++) {
-
-//     //     resultNumbers = resultNumbers + parseInt(value.toString().charAt(b)) * parseInt(value.toString().charAt(b))
-
-//     // }
-    
-//     resultNumbers = resultNumbers + parseInt(value.toString().charAt(result)) * parseInt(value.toString().charAt(result))
-
-//     if (resultNumbers == 4) {
-//         return false
-//     } else if (resultNumbers == 1) {
-//         result.innerHTML += "<br> happy number  " + i
-//         return true
-//     }else{
-//         happy(resultNumbers, value2);
-//     }
-
-// }
-
-// window.onload=happyNumbers()
 
 var result = document.getElementById("result")
 document.getElementById('btn').addEventListener('click',()=>{
