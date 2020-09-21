@@ -14,71 +14,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
   
   var db = firebase.firestore();
-  
-//   xong pham config => cho firebase biet
 
-// document.getElementById('btn').addEventListener('click',()=>{
-//     let username = document.getElementById('usernm').value
-//     let password = document.getElementById('pass').value
-    
-    
-//     db.collection("Learn-Mindx").get()
-//     .then((querySnapshot) => {
-//         let  user = querySnapshot.docs.map(val=>{
-//             return{
-//                 id: val.id,
-//                 ...val.data()
-//             }
-//         })
-//         return user
-//     })
-//     // normali data
-//     .then(user=>{
-//         for(let i = 0;i<user.length;i++){
-//             if(user[i].username == username){
-//                 if(user[i].password == password){
-//                     alert('Login Successful')
-//                     return user[i];
-//                 }else{
-//                     alert('your password is wrong')
-//                     return null;
-//                 }
-//             }
-//         }
-//         alert('youer username is not exist')
-//     })
-
-//     // checking
-//     .then((user)=>{
-//         localStorage.setItem("id", user.id)
-//         renderData()
-//         // console.log(user)
-//     })
-
-//     // co infomation ve user
-//     .catch(er=>{
-//         console.log(er.message)
-//     })
-//     ;
-
-// })
-
-// function conversation(img,name){
-//     return `<div class="row">
-//                 <img src="${img}"   alt="" class="col-4 rounded-circle" width="85" height="85"> 
-//                 <div class="col-7 w-100 d-flex align-items-center">
-//                     <h2>${name}</h2>
-//                 </div>
-//             </div>`
-// }
-
-// function init(){
-//     let cv = document.getElementById('user')
-//         for( let i = 0; i < 7; i++){
-//             cv.insertAdjacentHTML('beforeend',conversation({img:'img/anh-8-154194174162744712148.jpg',name:'name user'+i}))
-//         } 
-// }
-// init()
 
 document.getElementById("btn").addEventListener("click", () => {
     let username = document.getElementById("usernm").value
@@ -115,7 +51,7 @@ document.getElementById("btn").addEventListener("click", () => {
         .then((user) => {
             localStorage.setItem("id", user.id)
             renderData()
-            result.innerHTML += "chào admin " + username
+            result.innerHTML = "chào admin " + username
 
         })
         // co infomation ve user
@@ -124,32 +60,6 @@ document.getElementById("btn").addEventListener("click", () => {
         })
         ;
 })
-
-// function renderData(){
-//     db.collection('conversations').doc('nzAKY0ST4kgAPqiwwnEA').get()
-//     .then((doc) => {
-//         if(doc.exists){
-//             return doc.data()
-//         }
-//     })
-//     .then(data=>{
-//         let id = localStorage.id
-//         let user1Id = data.user1
-//         let user2Id = data.user2
-//         // console.log(id,user2Id,user1Id)
-//         let chat = document.getElementById('chat-erea')
-//         let message = data.messages
-//         message.forEach(value=>{
-//             let temp =
-//                 `
-//                     <div class="mess ${value.belong == user1Id ? 'ml' : 'mr'}">
-//                     <p>${value.content}</p>
-//                     </div>
-//                 `
-//                 chat.insertAdjacentHTML("beforeend", temp)
-//         })
-//     })
-// }
 
 function renderData() {
     document.getElementById("chat-erea").innerHTML=""

@@ -1,0 +1,14 @@
+.naka {
+    margin-top: 5rem;
+}
+.btn {
+    border: 1px solid ;
+}
+.btn:hover {
+    border-color: none ;
+    background-color: #000;
+    color: #fff ;
+}
+.nono {
+    margin-top: 2rem;
+}

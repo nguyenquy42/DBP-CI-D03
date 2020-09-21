@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h1>Word Buckets</h1>
+                <p>Viết hàm chia cụm từ thành các nhóm từ, với mỗi nhóm chứa n ký tự trở xuống.  Chỉ bao gồm các từ đầy đủ bên trong mỗi thùng</p>
+                <div class="row">
+                    <div class="col-8">
+                        <input class="form-control" type="text" id="txtInput"  autofocus>
+                    </div>
+                    <div class="col-4">
+                        <input class="btn btn-info" type="button" id="btn" value="Check">    
+                    </div>
+                </div>
+                <div>
+                    <p>Ví dụ: <br>
+                        bucketize("she sells sea shells by the sea", 10) <br>
+                        ➞ ["she sells", "sea shells", "by the sea"] <br><br>
+
+                        bucketize("the mouse jumped over the cheese", 7)<br>
+                        ➞ ["the", "mouse", "jumped", "over", "the", "cheese"]<br><br>
+
+                        bucketize("fairy dust coated the air", 20)<br>
+                        ➞ ["fairy dust coated", "the air"]<br>
+
+                    </p>
+                </div>
+                <span id="show"></span>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <script src="js/func.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
